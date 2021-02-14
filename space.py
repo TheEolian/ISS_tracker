@@ -11,3 +11,6 @@ df = pd.read_json(url)
 df['latitude'] = df.loc['latitude','iss_position']
 df['longitude'] = df.loc['longitude', 'iss_position']
 df.reset_index(inplace=True)
+
+#remove index and message columns as they are unneccessary and now easier to plot
+df = df.drop(['index', 'message'], axis=1)
