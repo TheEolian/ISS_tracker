@@ -14,3 +14,9 @@ df.reset_index(inplace=True)
 
 #remove index and message columns as they are unneccessary and now easier to plot
 df = df.drop(['index', 'message'], axis=1)
+
+# use plotly to plot the latitude and longitude
+
+fig = px.scatter_geo(df, lat='latitude', lon='longitude')
+
+fig.show()
