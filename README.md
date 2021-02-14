@@ -1,2 +1,6 @@
 # ISS_tracker
-Track the international space station
+Tracks the international space station and plots location to global map
+
+Pandas
+Plotly
+API from http://open-notify.org/
